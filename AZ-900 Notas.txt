@@ -1,0 +1,252 @@
+O QUE É CLOUD COMPUTING?
+A COMPUTAÇÃO EM NUVEM OFERECE SERVIÇOS COMPUTACIONAIS (SERVIDORES, ARMAZENAMENTO, BANCO DE DADOS, REDE, SOFTWARE,
+ANÁLISE E INTELIGÊNCIA) PELA INTERNET ("A NUVEM").
+NO FORMATO DE NUVEM, VOCÊ PAGA OS SERVIÇOS CONFORME UTILIZA (PAY AS YOU GO), REDUZINDO ASSIM CUSTOS OPERACIONAIS
+E DE INVESTIMENTO EM AMBIENTE ON PROMISE, ALÉM DE OFERECER MAIOR FACILIDADE E EFICIÊNCIA NO OFERECIMENTO DE RECURSOS
+FLEXÍVEIS E DE LARGA ESCALA.
+
+O QUE É O MICROSOFT AZURE? 
+É UMA PLATAFORMA DESTINADA À EXECUÇÃO DE SERVIÇOS E APLICATIVOS BASEADA NOS CONCEITOS
+DE COMPUTAÇÃO EM NUVEM. O AZURE É UMA SOLUÇÃO ABERTA E FLEXÍVEL, PERMITINDO CRIAR E ADMINISTRAR APLICATIVOS
+INTEGRADOS A DIVERSAS TECNOLOGIAS E FERRAMENTAS EXISTENTES NO MERCADO.
+
+SERVIÇOS AZURE
+- IAS
+- PAAS
+- SAAS
+
+MODELOS DE CLOUD
+- PUBLIC CLOUD
+- PRIVATE CLOUD
+- HYBRID CLOUD
+
+BENEFÍCIOS DE CLOUD
+- ALTA DISPONIBILIDADE: tem por objetivo deixar a aplicação disponível pelo 
+máximo de tempo possível (SLA para determinados tipos de recursos).
+- ESCALABILIDADE: tem por objetivo fornecer a possiblidade de escalar a aplicação
+de acordo com a sua necessidade (em termos de memória, armazenamento, etc).
+- CONFIABILIDADE: garante que a aplicação possa cumprir seus compromissos e objetivos
+a partir de uma arquitetura resiliente (availability set, disaster recovery, etc).
+- PREVISIBILIDADE: o modelo baseado em consumo (pay as you go) garante uma previsibilidade
+de custo dos recursos do Azure que serão utilizados.
+- SEGURANÇA: o Azure atende diversos padrões de compliance e segurança dos mais variados seguimentos
+de negócio, o que torna o ambiente seguro para alocar aplicações, inclusive de criticidade alta.
+- GOVERNANÇA / CAPACIDADE DE GERENCIAMENTO: apesar de o serviço estar rodando na nuvem, a governança do ambiente
+ está nas mãos de quem usa a plataforma a partir da capacidade de gerenciamento do ambiente oferecida pelo Azure ao usuário.
+- ELASTICIDADE: feature da Black Friday. A elasticidade oferece ao usuário do Azure a possibilidade de escalar sua aplicação
+temporariamente de acordo com uma necessidade pontual (inclusive de forma automatizada, a partir de regras estabelecidas).
+
+CapEx E OpEx:
+- Capital Expenditure (CapEx): é o investimento em infraestrutura física antecipadamente. Possui um alto custo inicial e o
+valor do investimento diminui com o tempo.
+- Operational Expenditure (OpEx): gastos com serviços e produtos conforme o necessário. Não possui custo inicial, sendo
+os que os recursos utilizados são pagos conforme o so (Pay as you Go)
+
+MODELO BASEADO EM CONSUMO: o Azure oferece um modelo baseado em consumo (Pay as you Go), os usuários só pagam pelos
+recursos que usam. Isso fornece uma melhor previsão de custos, preços por recursos e serviços individuais, e cobrança
+baseada no uso real.
+
+SERVIÇOS AZURE
+- IAAS: categoria mais básica de serviços de computação em nuvem.
+Permite que você construa uma infrestrutura de TI paga conforme o uso de servidores, máquinas virtuais, armazenamento,
+redes e sistemas operacionais do provedor de nuvem (Infraestrutura instantânea, provisionada e gerenciada pela internet).
+Permite um grau de customização e gerenciamento do sistema maior que o dos outros modelos, mas em contrapartida exige uma
+maior responsabilidade (vide responsabilidade compartilhada) por parte do cliente, e consequentemente um maior esforço
+administrativo.
+
+- PASS: Fornece um ambiente para construção, testes e implantação de aplicativos de software.
+Ajuda a criar aplicativos rapidamente, sem ter que se concentrar no gerenciamento de infraestrutura, porém é mais
+limitada no ponto de vista de customizações da infraestrutura para rodar determinado serviço (como por ex um plugin).
+
+- SAAS: Modelo que exige o menor esforço administrativo.
+Software hospedado centralmente e gerenciado para usuáriso finais. Os usuários se conectam e usam aplicativos baseados
+em nuvem pela internet (ex: MS 365, e-mails corporativos, schedules).
+Você fica responsável pelo gerenciamento dos dados, das licenças e dos acessos à plataforma.
+
+**DICA AZ900: Um serviço IAAS pode ser migrado para um serviço PAAS (dependendo de determinados critérios,
+ mas não para um sistema SAAS). IAAS -> PAAS | IAAS X SAAS
+
+- MODELO DE RESPONSABILIDADE COMPARTILHADA: Quanto mais básico o serviço, maior a responsabilidade e o esforço
+administrativo. 1) Ambiente On-Promise 2) IAAS 3) PAAS 4) SAAS
+
+COMPONENTES CORE DA ARQUITETURA AZURE
+REGIÕES DO AZURE:
+- Datacenters físicos espalhados pelo planeta.
+- Existem mais + de 60 regiões (cada uma composta por um ou mais datacenters próximos).
+- O cliente escolhe a região que quer hospedar seus serviços e recursos.
+- Cada região possui um custo específico para o uso dos serviços.
+- Quanto mais distante a região tiver do usuário, maior será a latência da aplicação.
+- Conformidade: a Azure possui conformidade com os padrões lagais e regolatórios das regiões que hospedam seus datacenters.
+Instituições de determinadas natureza (ex: financeira) possuem padrões específicos e não podem ser hospedadas em uma região
+diferente da sua de origem, por exemplo.
+REGIÕES PARES: Conjnto de duas regiões que fornece alguns mecanismos como replicação automática para alguns serviços,
+priorização de recuperação em caso de paralisações, atualização sequencial para minimizar o tempo de inatividade do serviço.
+=> a região par do Brasil é nos Estados Unidos.
+
+RECURSOS AZURE
+RESOURCE GROUP: contêiner para gerenciar e agregar recursos em uma única unidade.
+- Os recursos podem existir em apenas um grupo de recursos.
+- Os recursos podem existir em diferentes regiões.
+- Os recursos podem ser transferidos para diferentes grupos de recursos.
+- Os aplicativos podem utilizar vários grupos de recursos.
+- como é definido os resource groups? Depende, pode ser por ambiente (hml e pdr), pode ser por recurso (um só pra VM, um só
+pra storage, etc), por projeto, etc.
+
+AZURE RESOURCES: Os recursos do Azure são componentes como armazenamento, máquinas virtuais e redes disponíveis para
+criar soluções em nuvem => VIRTUAL MACHINES, STORAGE ACCOUNTS, VIRTUAL NETWORKS (VNETs), APP SERVICES, SQL DATABASES,
+FUNCTIONS.
+
+AZURE SUBSCRIPTIONS: Assinaturas do Azure que fornecem acessos autenticado e autorizado às contas do Azure.
+Todos os recursos utilizados no Azure (pay as you go) são computados e vinculados à subscription do usuário, ou seja,
+o faturamento é feito por assinatura.
+As subscriptions servem também para limitar o acesso dos usuários aos recursos de acordo com sua necessidade.
+Ex: Dev subscription, Test Subscription, Production Subscription.
+
+TIPOS DE SUBSCRIPTION:
+- Trial
+- Pay-as-you-go
+- Enterprise Agreement
+- Estudante
+- Visual Studio/MSDN
+
+VIRTUANL NETWORK - VNET
+É a estrutura/bloco de construção fundamental de uma rede privada no Azure. 
+Ela permite alocar diversso recursos do Azure, como VMs, permitindo que esses recursos se comuniquem de forma segura 
+com a internet, redes locais e outras VMs, por exemplo.
+-> A VNET é semelhanbte a uma rede tradicional que você operaria em seu próprio data center on-promise, mas traz benefícios 
+adicionais da infraestrutura do Azure, como escala, disponibilidade e isolamento.
+
+- Subnets: as subnets sãop intervalos de endereço IP dentro da VNET. Você pode dividir uma VNET em várias subnets, para
+organização e segurança. Cada placa de interface de rede (NIC) em uma VM é conectada a uma subnet de uma VNET. AS NICs
+conectadas a subnets (iguais ou diferentes) dentro de uma VNET podem se comunicar entre si por padrão (ou seja, sem nenhuma
+configuração extra).
+Ao configurar uma VNET, você especifica a topologia, incluindo os espaços de endereço e subnets disponíveis. Se a VNET for
+conectada a outras VNETs ou redes locais, você deve selecionar intervalos de endereços que não se sobreponham.
+
+- NSG: Newtork Security Group. Realiza a filtragem de pacotes, validando tudo que está se conectando a rede (IP de origem,
+porta de origem, IP destino, porta destino), assim como um firewall. O NSG somente é vinculado às subnets, ou a placa de
+rede (NIC) de uma máquina virtual, sendo que ele pode ser associado a mais de uma subnet ao mesmo tempo, deste que estejam
+todas alocadas em uma única VNET.
+
+- Arquitetura Hub-Spoke (árvore com galhos): Nesse tipo de arquitetura, que é o mais utilizados em ambientes de nuvem, 
+configuramos uma VNET-HUB (que receberá as conexões mais utilizadas usualmente), e N outras VNETS como spokes, 
+conectando-as através de um peering.
+Não existe transitividade no peering. Ou seja, as VNETS só irão se tiverem um peering configurado entre si.
+
+-> As VNETs e VMs precisam estar alocadas na mesma região para funcionar. Já o Resource Group não impacta na região,
+podendo ser configurado em uma região diferente das VNETs/VMs que está recebendo.
+
+VIRTUAL MACHINES - VMs
+As máquinas virtuais se enquadram na categoria de Iaas (Infraestrutura como serviço). Por conta disso, exigem que o cliente
+as gerencie de forma total (configurando a VNET, o IP, as regras, de acesso, etc), permitindo assim um maior controle
+sobre o ambiente de computação do que outros serviços Azure. Ao subir uma VM, o que o cliente não irá gerenciar será o
+hardware físico da máquina, sendo esse um componente de responsabilidade da Microsoft. 
+As VMs são um dos recursos mais utilizados do Azure, enquadrando-se em diversas famílias (subdivisões por hardware e
+necessidade de uso por parte do cliente).
+As VMs da Azure permitem um "resize", que é uma mudança na capacidade de hardware da máquina (ou seja, mudança de família),
+que para ser feita deverá passar por uma reinicialização. Quando a máquina for aberta novamente, estará configurada com
+a nova capacidade de hardware escolhida.
+
+
+- estrutura da VNET: em ambientes de produção, a estrutura da VNET já deve estar planejada e criada.
+- nome da VM: o nome da VM não pode ser alterado posteriormente.
+- a região onde será hospedada: você até pode mover uma máquina de região através do resource mover, porém esse é um
+processo trabalhoso, visto que você irá ter que mover os demais recursos que estão atrelados à VM, como a VNET. Outra
+maneira é fazer um cópia do disco da máquina e configurar uma nova máquina carregando essa cópia de disco em outra região,
+essa alternativa não é complexa, mas gera trabalho manual e indisponibilidade, por isso é importante planejear a arquitetura
+das suas VMs, VNETs, etc. 
+- o tamanho da VM: resize (gera indisponibilidade de pelo menos 2min por conta da reinicialização).
+- sistema operacional que executa: linux e windows.
+- configurações da VM pós deploy: monitoramento, backup, antivírus, etc.
+- recursos relacionados à VM: é importante considerar os recursos que se relacionam à VM, como a VNET a qual será alocada.
+
+
+OPÇÕES DE ALTA DISPONIBILIDADE (EXCLUSIVO PARA MÁQUINAS VIRTUAIS)
+As máquinas virtuais são divididas em três tipos de disco de armazenamento:
+- VM com Standard HDD: 95% de SLA
+- VM com Standard SSD: 99% SLA
+- VM com Premium Storage: 99.9% de SLA
+
+VM com Premium Storage:
+Dentro da VM com Premium Storage, temos algumas peculiaridades em relação ao SLA.
+Para entregar o maior SLA possível, a Microsoft oferece opções de configurações e arranjos de máquina.
+- AVAILABILITY SETS: Esse modelo oferece proteção contra falhas dentro do datacenter. Se a aplicação do usuário estiver
+alocada em duas ou mais máquinas virtuais e um availability set for configurado, as máquinas serão alocadas em racks
+diferentes dentro do mesmo datacenter. Esse arranjo oferece um SLA de 99.95%
+Cada máquina virtual configurada em um availability set receberá um update domain (UD) e um fault domain (FD).
+O update domain é utilizado para cada vez que a Microsoft precisa fazer um tipo de manutenção programada.
+A atualiazção será realizada de forma sequencial a partir dos updates domains configurados, garantindo que a maior
+parte das suas VMs configuradas no availability set estejam disponíveis durante as atualizações, sem impactar seu
+ambiente como um todo.
+Já o fault domain é utilizado para garantir a alta disponibilidade quando houver uma falha não programada, ele é configurado
+a partir da alocação das suas máquinas virtuais em diferentes racks físicos dentro do datacenter.
+
+- AVAILABILITY ZONES: Esse modelo oferece proteção contra falhas de datacenters inteiros. Se a aplicação do usuário estiver
+alocada em duas ou mais máqinas virtuais e um availability zones for configurado, as máquinas serão alocadas em datacenters
+(zonas) diferentes. Esse aranjo oferece um SLA de 99.99%
+OBS: Geralmente cada região do Azure possui 3 zonas (datacenters) diferentes.
+**ZONA = DATACENTER**
+**racks físicos < zonas (datacenters) < regiões**
+
+MULTI-REGION DISASTER RECOVER: Essa configuração permite que o usuário possua uma cópia da sua máquina em outra região
+(região secundária). Nesse caso, a Microsoft não oferece nenhum SLA, já que o usuário e quem terá que acionar a configuração
+caso seja necessário.
+
+OBS: os availability sets e availability zones não são cópias, e sim máquinas diferentes organizadas de forma a entregar o
+maior SLA possível para sua aplicação. A única cópia de máquina virtual que temos, além do backup padrão, é o multi-region
+disaster recovery.
+
+STORAGE ACCOUNT
+O serviço de storage account é responsável pelo armazenamento de dados no Azure.
+Existem alguns formatos de storage account, cada um responsável por armazenar um tipo de dado específico 
+com características específicas.
+-> Azure containers: armazena objetos massivamente escalaveis para texto e dados binários (BLOBS). É a categoria
+de armazenamento mais "geral" do azure, podendo armazenar imagens, videos, planilhas, arqivos de backup, base de
+dados, logs textos, PDFs, etc.
+Para acessar um container e consumir os arquivos que ali estão, você deve utilizar o portal azure ou consumi-los
+via API Rest.
+-> Azure Tables: É o primeiro/mais básico formato de banco de dados não relacional do Azure, fornecendo um armazenamento
+de chave/atributo com um design sem esquema.
+-> Azure Queues: armazena mensagens confiáveis entre componentes do aplicativo (messages de microserviços, por exemplo).
+-> Files: Diretórios compartilhados (fileserver) na nuvem, podendo ser mapeados em máquinas hospedadas na nuvem ou no
+ambiente on-promise.
+
+STORAGE ACCOUNT - REPLICAÇÃO
+-> LRS (single region): três réplicas no mesmo datacenter. Protege o storage contra falahs de disco, nó e rack. Possui gravação 
+síncrona para as três cópias.
+-> ZRS (single region): três réplicas em três datacenter diferentes. Protege contra falhas de disco, nó, rack e zona. Possui gravação 
+síncrona para as três zonas.
+-> GRS (multiple regions): seis réplicas em duas regiões diferentes (três por região). Protege contra grandes desastres regionais. Possui
+gravação assíncrona para a região secundária.
+OBS: funciona basicamente como 2 LRS, um na região principal outro na região secundária.
+-> RA-GRS (multiple regions): Tem uma arquitetura semelhante ao GRS, porém permite que o cliente faça a leitura dos dados
+que estão na região secundária (Ex: BI que consome muitos dados poderá ser apontado pra região secundária, assim não
+impactaria a performance da região primária).
+-> GZRS (multiple regions): seis réplicas, duas regiões. Protege contra falha de disco, nó, rack, zona e região. Gravações sícncronas para
+todas as três zonas e cópia assíncrona para a região seecundária.
+OBS: Na região principal, possui uma arquitetura de ZRS,é isso que o diferencia do GRS.
+-> RA-GZRS (multiple regions): Tem uma arquitetura semelhante ao GZRS, porém permite que o cliente faça leitura dos dados que estão na região
+secundária.
+
+OBS: se tratando de storage account, as replicações dentro da mesma região são síncronas, 
+já para regiões diferentes são assíncronas.
+
+STORAGE ACCOUNT - ENDPOINT:
+Cada objeto tem um endereço URL exclusivo (endpoint) - com base em account name e storage type
+ex: http://mystorageaccount.blob.core.windows.net (container)
+
+TIERS
+-> HOT TIER: utilizado para armazenar objetos que possuem acesso frequente
+-> COOL TIER: utilizado para armazenar grandes quantidades de dados que são acessados e armazenados com uma
+frequência superior a pelo menos 30 dias.
+
+TIER NO NÍVEL BLOB:
+-> HOT TIER: ''
+-> COOL TIER: ''
+-> ARCHIVE: utilizado para dados que podem tolerar várias horas de latência de recuperação e que permanecerão no
+nível de arquivo por pelo menos 180 dias.
+
+OBS: quanto maior a performance, maior o custo de armazenamento.
+Porém, quanto menor a performance, maior o custo transacional.
+ex: o tier com o menor custo transacional e maior custo de aramzenamento é o tier hot.
+ex 2: o tier com maior custo transacional e menor custo de armazenamento é o tier archive.
